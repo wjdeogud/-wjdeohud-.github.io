@@ -1,0 +1,34 @@
+#content{
+  background:repeating-linear-gradient(90deg,#83aab6,#a6c282);
+  min-width: 1200px;
+  overflow: hidden;
+}
+#content .wrap{
+  height: 560px;
+  padding-top: 100px;
+}
+#content .icon{
+  width: 3480px;
+  display: flex;
+  position: relative;
+}
+#content .icon>li{
+  margin: 0 15px;
+}
+#content .icon>li:first-child{
+  margin-left: 0;
+}
+#content .icon>li:last-child{
+  margin-right: 0;
+}
+#content #scroll{
+  width: 1200px;
+  height: 10px;
+  background-color: #747474;
+  margin-top: 20px;
+}
+#content #scroll>#bar{
+  width: 200px;
+  height: 10px;
+  background-color: #1e1e1e;
+}

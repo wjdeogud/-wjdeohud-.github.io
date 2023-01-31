@@ -1,0 +1,82 @@
+#contain{
+  background-color: #fff;
+  height:640px;
+  width: 100%;
+}
+#contain>.wrap{position: relative;}
+#contain>.wrap>.meganav>li{
+  float: left;
+}
+#contain>.wrap .dropdown-content{
+  position: absolute;
+  left: 0;
+  width:1200px;
+  opacity: 0;
+}
+#contain>.wrap .column{
+  display: flex;
+  justify-content: space-around;
+}
+#contain .column>li>p:nth-child(2){
+  font-size: 16px;
+  color: #666;
+  font-family: '맑은 고딕';
+  line-height: 40px;
+}
+#contain .column>li:first-child>p:nth-child(3){
+  font-size: 16px;
+  color: #1e1e1e;
+  font-family: '맑은 고딕';
+  line-height: 50px;
+  font-weight: bold;
+}
+#contain .meganav>li:nth-child(2) .column>li>p:nth-child(3),
+#contain .meganav>li:nth-child(4) .column>li>p:nth-child(3){
+  line-height: 50px;
+}
+#contain .column>li~li>p:nth-child(3){
+  font-size: 16px;
+  color: #1e1e1e;
+  font-family: '맑은 고딕';
+  line-height: 25px;
+  font-weight: bold;
+}
+#contain .column>li>h2{
+  font-size: 24px;
+  font-family: 'Adobe 고딕 Std';
+  color: #1e1e1e;
+  line-height: 80px;
+}
+#contain .dropdown>button{
+  line-height: 20px;
+  margin: 40px 40px 40px 0;
+  font-size: 18px;
+  color: #1e1e1e;
+  font-family: 'Adobe 고딕 Std';
+  margin-right: 40px;
+  cursor: pointer;
+}
+#contain .meganav>li:first-child>button{
+  margin-left: 15px;
+}
+#contain .meganav>li>button.on{
+  color: #eed94e;
+}
+#contain .meganav>li>button:hover{
+  color: #eed94e;
+  transition: all 0.4s;
+}
+#contain .wrap>h1{
+  position: absolute;
+  right: 5px; top:-80px;
+  font-size: 80px;
+  color:#da4343;
+}
+#contain .meganav .dropdown-content{
+  display: none;
+}
+#contain .meganav>li>button.on+div{
+  display: block;
+  opacity: 1;
+  transition: all 0.5s;
+}

@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+.clearfix::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+body{
+  font-family: '휴먼둥근헤드라인';
+}

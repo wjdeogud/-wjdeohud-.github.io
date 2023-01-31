@@ -1,0 +1,59 @@
+#content>.wrap{
+  min-width: 1200px;
+  height: 660px;
+  padding: 80px 0;
+  color: #111;
+  font-family: 'adobe 고딕 std';
+}
+#content span{color: #3d7bf7;}
+#content>.wrap>div{
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+}
+#content>.wrap>div>h1{
+  margin-left: 50px;
+  font-size: 40px;
+}
+#content>.wrap>div>p{
+  font-size: 20px;
+  margin-right: 25px;
+}
+#content>.wrap>.goods{
+  display: flex;
+  padding: 0 50px;
+}
+#content>.wrap>.goods>li{
+  margin: 0 5px;
+  transition: all 0.5s;
+}
+#content>.wrap>.goods>li>div{
+  width: 210px;
+  height: 290px;
+  overflow: hidden;
+}
+#content>.wrap>.goods>li>p{
+  font-family: '나눔 고딕';
+  font-weight: bold;
+  color: #666;
+  line-height: 30px;
+  font-size: 15px;
+}
+#content>.wrap>.goods>li>h3{
+  font-size: 18px;
+  font-family: '나눔 고딕';
+  font-weight: bold;
+  line-height: 50px;
+}
+#content>.wrap>.goods>li>h2{
+  font-size: 24px;
+  line-height: 50px;
+}
+#content>.wrap>.goods>li:hover>div>a>img{
+  animation: scale 1s ease-in-out;
+}
+@keyframes scale{
+  0%{scale:1;}
+  50%{scale:1.2;}
+  100%{scale:1;}
+}

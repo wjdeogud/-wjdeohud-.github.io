@@ -1,0 +1,31 @@
+header>.wrap{
+  width: 100vw;
+  height: 100vh;
+  background: url(../../img/genesis/bg.png) center/cover;
+  font-family: '나눔 고딕';
+  color: #fff;
+  position: relative;
+}
+header>.wrap>nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 100px 0 80px;
+}
+header>.wrap>nav>.logo{height: 100px;}
+header>.wrap>nav>ul{display: flex; justify-content: space-between;}
+header .text{position: absolute; left: 80px; bottom: 100px;}
+header p{font-size: 40px; line-height: 50px;}
+header h1{font-size: 80px; line-height: 100px;}
+header>.wrap>nav>.gnb{width: 700px;}
+header>.wrap>nav>ul>li a{transition: all 0.5s; opacity: 0.5;}
+header>.wrap>nav>ul>li a:hover{opacity: 1;}
+header>.wrap>nav>.menu{width: 150px;}
+
+@media screen and (max-width:1400px){
+  header>.wrap>nav>.menu{
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+#contain{min-width: 1920px; font-family: 'HY견명조';}
+#contain>.wrapper{
+  width: 100%;
+  height: 3950px;
+  padding: 300px 0 200px 0;
+}
+#contain .bg{
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url(../../img/second/bg.jpg) center/cover;
+  z-index: -10;
+}
+#contain .character{
+  width: 1800px;
+  height: 1650px;
+  margin: auto;
+}
+#contain .character .title{
+  width: 1800px;
+  line-height: 300px;
+  background-color: black;
+  border: 1px solid #fff;
+  font-size: 110px;
+  text-align: center;
+  font-weight: normal;
+}
+#contain .character>ul>li{
+  width: 450px;
+  height: 450px;
+  background-color: black;
+  border: 1px solid #fff;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0 0 30px;
+  transition: all 0.5s;
+}
+#contain .character>ul>li p{
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  left: 30px;
+  z-index: 3;
+}
+#contain .character>ul>li p:first-child{
+  top: 20px;
+}
+#contain .character>ul>li p:nth-child(2){
+  top: 40px;
+}
+#contain .character>ul>li img{
+  transition: all 0.5s;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+#contain .character>ul>li:hover img{
+  transform: scale(1.1) translate(-50%,-50%);
+  filter: grayscale();
+}
+#contain .character>ul>li:hover{
+  background-color: lightseagreen;
+}
+#contain .wrapper>div:nth-child(3){
+  margin-top: 150px;
+}

@@ -1,0 +1,13 @@
+$(function(){
+  $("#gnb>.wrap>ul>li").hover(
+    function(){
+      $("#gnb>.wrap>ul>li").stop().animate({width:"15%"},500);
+      $(this).stop().animate({width:"25%"},500);
+    }
+  )
+  $("#gnb>.wrap>ul>li").mouseout(
+    function(){
+      $("#gnb>.wrap>ul>li").stop().animate({width:"16.6666%"},500);
+    }
+  )
+})

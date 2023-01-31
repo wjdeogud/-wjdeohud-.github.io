@@ -1,0 +1,116 @@
+header .wrap{
+  width: 100%;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 30px;
+}
+header>.wrap>.logo{
+  font-size: 20px;
+  color: #282880;
+}
+header>.wrap .gnb{
+  display: flex;
+  color: #282880;
+  font-size: 20px;
+}
+header>.wrap .gnb>li{
+  margin-left: 40px; 
+  transition: all 0.5s;
+}
+header>.wrap .gnb>li:hover{color: #111;}
+header>.wrap>.menu{
+  display: flex;
+  justify-content: space-between;
+}
+header>.wrap>.menu>.sns{
+  font-size: 20px;
+}
+header>.wrap>.menu>.sns>li{
+  margin-left: 40px;
+  color: #282880;
+  opacity: 0.5;
+  transition: all 0.5s;
+  float: left;
+}
+header>.wrap>.menu>.sns>li:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+header>.wrap>.bar{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  display: none;
+  color: #282880;
+  cursor: pointer;
+}
+header .btn{display: none;}
+header .btn i{transition: all 0.5s;}
+header .btn:hover i{color: #111;}
+
+@media screen and (max-width:1200px){
+  header .sns{
+    display: none;
+  }
+  header>.wrap>.logo{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:980px){
+  header>.wrap .gnb>li{
+    margin-left: 20px;
+  }
+  header>.wrap .gnb{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:768px){
+  header>.wrap>.bar{
+    display: block;
+  }
+  header #box{
+    width: 260px;
+    height: 100%;
+    background-color: #282880;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    z-index: 999;
+    line-height: 0;
+    padding-left: 30px;
+    display: block;
+  }
+  header .menu .gnb{
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  header .menu .btn{
+    display: block;
+    line-height: 60px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 180px;
+  }
+  header .wrap{
+    display: block;
+  }
+  header .sns{
+    display: block;
+  }
+  header>.wrap>.menu>.sns>li{
+    color: #fff;
+    margin-top: 100px;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  header>.wrap{
+    line-height: 80px;
+  }
+}

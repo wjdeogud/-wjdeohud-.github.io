@@ -1,0 +1,44 @@
+#rank{
+  min-width: 1200px;
+  color: #111;
+  font-family: 'Adobe 고딕 Std';
+}
+#rank>.wrap{
+  height: 250px;
+  padding-top: 50px;
+}
+#rank>.wrap>.rank{
+  display: flex;
+}
+#rank>.wrap>.rank>li{
+  width: 150px;
+  height: 120px;
+  border-right: 2px solid #999;
+  font-size: 15px;
+  text-align: center;
+}
+#rank>.wrap>.rank>li:last-child{
+  border: none;
+}
+#rank>.wrap>.text{
+  font-size: 20px;
+  line-height: 50px;
+  margin-top: 30px;
+}
+#rank>.wrap>.text p{
+  float: right;
+  margin-right: 50px;
+}
+#rank>.wrap .box{
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+#rank>.wrap .box:hover{
+  opacity: 1;
+  animation: ani 1s ease-in-out;
+}
+@keyframes ani{
+  0%{scale:1;}
+  50%{scale:1.1;}
+  100%{scale:1;}
+}

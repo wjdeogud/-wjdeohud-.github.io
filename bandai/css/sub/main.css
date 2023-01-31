@@ -1,0 +1,83 @@
+#main{
+  min-width: 1200px;
+}
+#main>.wrapper{
+  position: relative;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+}
+#main>.wrapper>.main{
+  width: 500%;
+  height: 680px;
+  position: absolute;
+}
+#main>.wrapper>.main>li{
+  width: 20%;
+  height: 680px;
+  float: left;
+  background: url(../../img/sub1/main1.png) center/cover;
+  position: relative;
+}
+#main>.wrapper>.main>li>.box{
+  width: 1200px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 90px;
+  font-family: '휴먼둥근헤드라인';
+}
+#main>.wrapper>.main>li>.box>h2{
+  line-height: 45px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+#main>.wrapper>.main>li>.box>h1{
+  line-height: 60px;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+#main>.wrapper>.main>li>.box button{
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #3d7bf7;
+  border: 2px solid #3d7bf7;
+  color: #fff;
+  font-family: 'Adobe 고딕 Std';
+  font-size: 20px;
+  transition: all 0.5s;
+  margin: 20px 0 20px 0;
+}
+#main>.wrapper>.main>li>.box button:hover{
+  background-color: transparent;
+}
+#main>.wrapper>.slide{
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+#main>.wrapper>.slide>li{
+  width: 70px;
+  height: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+#main>.wrapper>.slide>li.on{
+  opacity: 1;
+}
+#main>.wrapper>div{
+  font-size: 120px;
+  position: absolute;
+  opacity: 0.7;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#main>.wrapper>.next{
+  right: 0;
+}

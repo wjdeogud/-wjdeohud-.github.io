@@ -1,0 +1,351 @@
+#contents>.wrap{width: 100%;}
+#contents .main{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#contents .dot{
+  position: absolute;
+  left: 50%; top: 180px;
+  transform: translateX(-50%);
+  display: flex;
+  cursor: pointer;
+}
+#contents .dot>li{
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  opacity: 0.3;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+#contents .dot>li.on{
+  opacity: 1;
+}
+#contents .main>.largeImg{
+  width: 400%;
+  position: absolute;
+  display: flex;
+}
+#contents .main>.largeImg>li{
+  width: 25%;
+  height: 400px;
+  background: url(../img/main1.png) bottom/cover;
+  text-align: center;
+  padding-top: 45px;
+}
+#contents .main>.largeImg>li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#contents .main>.largeImg>li p{
+  font-size: 30px;
+  line-height: 30px;
+}
+#contents .main>.largeImg>li em{color: #ff3900;}
+#contents .main>.largeImg>li h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 20px;
+  color: #00beff;
+}
+#contents .story{
+  background: url(../img/thumb1.png) center/cover;
+  width: 100%;
+  height: 200px;
+  padding: 15px 0 0 200px;
+}
+#contents .story>p{
+  color: #666;
+  line-height: 30px;
+  font-size: 20px;
+}
+#contents .story>h1{
+  color: #282880;
+  font-size: 30px;
+  line-height: 40px;
+}
+#contents .story>h2{
+  font-size: 15px;
+  line-height: 20px;
+  color: #111;
+}
+#contents .fresh{
+  background: url(../img/thumb2.png) bottom/cover;
+  width: 100%;
+  cursor: pointer;
+  height: 400px;
+  padding: 50px 0 0 200px;
+}
+#contents .fresh>h1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #764326;
+}
+#contents .fresh>p{
+  font-size: 18px;
+  line-height: 25px;
+  color: #111;
+  font-weight: bold;
+}
+#contents .various{
+  background: url(../img/thumb3.png) bottom/cover;
+  width: 60%;
+  cursor: pointer;
+  height: 500px;
+  padding: 40px 0 0 70px;
+}
+#contents .various>h1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #b72b22;
+}
+#contents .various>p{
+  font-size: 18px;
+  line-height: 25px;
+  color: #111;
+  font-weight: bold;
+}
+#contents .sweet{
+  background: url(../img/thumb4.png) bottom/cover;
+  width: 40%;
+  cursor: pointer;
+  height: 500px;
+  padding: 40px 0 0 20px;
+}
+#contents .sweet>h1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #c28f45;
+}
+#contents .sweet>p{
+  font-size: 18px;
+  line-height: 25px;
+  color: #111;
+  font-weight: bold;
+}
+#contents .dessert{
+  background: url(../img/thumb5.png) bottom/cover;
+  width: 60%;
+  cursor: pointer;
+  height: 600px;
+  padding: 50px 0 0 70px;
+}
+#contents .dessert>h1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+}
+#contents .dessert>p{
+  font-size: 18px;
+  line-height: 25px;
+  color: #111;
+  font-weight: bold;
+}
+#contents .box{display: flex;}
+
+#contents .dream{
+  background: #282880 url(../img/thumb6.png) bottom/cover;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  color: #fff;
+}
+#contents .txt{
+  width: 40%;
+}
+#contents .dream>h1{
+  line-height: 50px;
+  font-size: 40px;
+}
+#contents .dream>p{
+  line-height: 20px;
+  font-size: 15px;
+}
+#contents .dream>button{
+  width: 150px;
+  line-height: 40px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-family: '휴먼둥근헤드라인';
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#contents .dream>button:hover{
+  background-color: #fff;
+  color: #111;
+}
+#contents .search{
+  width: 100%;
+  height: 300px;
+  border: 5px solid #282880;
+  padding: 20px 0 0 20px;
+}
+#contents .search h1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #282880;
+}
+#contents .search p{
+  margin: 10px 0 70px 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+#contents .search input{
+  width: 350px;
+  height: 70px;
+  border: 4px solid #282880;
+  text-indent: 10px;
+  font-size: 14px;
+  outline: none;
+  border-right: none;
+}
+#contents .search button{
+  width: 50px;
+  border: 4px solid #282880;
+  font-size: 40px;
+  border-left: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#contents .search button i{
+  color: #282880;
+}
+#contents .search form{
+  display: flex;
+}
+@media screen and (max-width:1200px){
+  #contents .search input{
+    width: 250px;
+    height: 50px;
+  }
+  #contents .search button{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:980px){
+  #contents .story{
+    padding: 15px 0 0 90px;
+  }
+  #contents .fresh,
+  #contents .dessert{
+    padding: 50px 0 0 90px;
+  }
+  #contents .various{
+    padding: 40px 0 0 90px;
+  }
+  #contents .search input{
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+  }
+  #contents .search button{
+    font-size: 20px;
+  }
+  #contents .dream>h1{
+    font-size: 35px;
+  }
+  #contents .sweet>h1{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width:768px){
+  #contents .story{
+    background: url(../img/thumb7.png) center/cover;
+    padding: 30px 0 0 20px;
+    height: 200px;
+  }
+  #contents .fresh{
+    background: url(../img/thumb8.png) bottom/cover;
+    padding: 30px 0 0 20px;
+    height: 300px;
+  }
+  #contents .box{
+    display: block;
+  }
+  #contents .various{
+    width: 100%;
+    background: url(../img/thumb9.png) bottom/cover;
+    padding: 30px 0 0 20px;
+    height: 300px;
+  }
+  #contents .sweet{
+    width: 100%;
+    background: url(../img/thumb10.png) bottom/cover;
+    padding: 30px 0 0 20px;
+    height: 300px;
+  }
+  #contents .sweet h1{font-size: 40px;}
+  #contents .dessert{
+    width: 100%;
+    background: url(../img/thumb11.png) bottom/cover;
+    padding: 30px 0 0 20px;
+    height: 300px;
+  }
+  #contents .txt{
+    width: 100%;
+  }
+  #contents .dream{
+    background: #282880 url(../img/thumb12.png) bottom/cover;
+    text-align: left;
+    padding: 30px 0 0 20px;
+  }
+  #contents .dream h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #contents .dream p{
+    color: #111;
+    margin-top: 10px;
+  }
+  #contents .dream button{
+    border: 4px solid #111;
+    color: #111;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  #contents .dream button:hover{
+    background-color: #111;
+    color: #fff;
+  }
+  #contents .search{
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    height: 200px;
+  }
+  #contents .search h1{
+    line-height: 30px;
+    font-size: 30px;
+  }
+  #contents .search p{
+    line-height: 20px;
+    font-weight: bold;
+  }
+  #contents .search input{
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+  }
+  #contents .search form{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  }
+  @media screen and (max-width:480px){
+    #contents .main>.largeImg>li p{
+      font-size: 20px;
+      line-height: 20px;
+    }
+    #contents .main>.largeImg>li h1{
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }

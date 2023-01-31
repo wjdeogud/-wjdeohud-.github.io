@@ -1,0 +1,242 @@
+header{
+  width: 100%;
+  min-width: 1200px;
+  height:160px;
+  background:repeating-linear-gradient(90deg,#83aab6,#a6c282);
+  z-index: 99999999999;
+  position: fixed;
+}
+header>.wrap{
+  position: relative;
+  padding:0 25px 0 50px;}
+header>.wrap>.box{
+  display: flex;
+  justify-content: space-between;
+}
+header .logo{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: '휴먼둥근헤드라인';
+  background-color: inherit;
+}
+header .logo>li:first-child{margin-right: 15px;}
+header .nav{
+  display: flex;
+  line-height: 70px;
+  font-size: 15px;
+  align-items: center;
+}
+header .nav>li{margin-left:40px;}
+header .nav>li>a{transition: all 0.5s;}
+header .nav>li:last-child{
+  font-size: 20px;
+  margin-left:10px;
+}
+header .navi{
+  line-height: 40px;
+  display: flex;
+  float: right;
+  font-size: 20px;
+}
+header .navi>li{margin-left: 25px;}
+header .navi>li>a{transition: all 0.5s;}
+header .meganav{
+  display: flex;
+}
+header .box3{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+header .meganav>li>.dropdown-content{
+  left: 0;
+  transform: translateX(50px);
+  position: absolute;
+  font-size: 18px;
+  color:#333;
+  padding-top: 40px;
+  z-index: 999999999;
+  display: none;
+}
+header .meganav>li{
+  margin-right: 50px;
+  line-height: 50px;
+}
+header .meganav>li>button{
+  color:#fff;
+  font-size: 20px;
+  font-family: 'adobe 고딕 std';
+  cursor: pointer;
+}
+header .dropdown-content .column1{
+  font-family: '휴먼둥근헤드라인';
+  font-size: 20px;
+  border-right:2px solid #999;
+  width:110px;
+  height:480px;
+  margin-right: 30px;
+  line-height: 35px;
+}
+header .dropdown-content .title{
+  font-size: 20px;
+  font-family: '휴먼둥근헤드라인';
+  line-height: 35px;
+}
+header .dropdown-content .column3{
+  width:300px;
+}
+header .dropdown-content hr{
+  width:200px;
+  margin:20px 0;
+}
+header .dropdown-content .column1>li a{
+  display: block;
+  width:90px;
+  height:30px;
+}
+header .dropdown-content .column3>li~li a{
+  font-size: 18px;
+  display: block;
+  width:280px;
+  line-height:40px;
+  font-family: '나눔스퀘어';
+}
+header .dropdown-content .column4 .textbox,
+header .dropdown-content .column6 .textbox{
+  display: flex;
+}
+header .dropdown-content .column4 .textbox>.txt>li~li a,
+header .dropdown-content .column5 .textbox>.txt>li~li a,
+header .dropdown-content .column>li~li a,
+header .dropdown-content .column2>li~li a,
+header .dropdown-content .column6>.textbox>.txt>li~li a{
+  font-size: 18px;
+  display: block;
+  width:200px;
+  line-height:40px;
+  font-family: '나눔스퀘어';
+}
+header .dropdown-content .column7>li~li a{
+  font-size: 18px;
+  display: block;
+  width:170px;
+  line-height:40px;
+  font-family: '나눔스퀘어';
+}
+header .dropdown-content>ul{float: left;}
+header .dropdown-content .column6>.textbox>ul:last-child>li~li a{
+  width:170px;
+}
+header .dropdown-content .column7>hr{width:170px;}
+header .dropdown-content .column5 .textbox{
+  display: flex;
+}
+header .nav>li:hover>a{color: red;}
+header .navi>li:hover>a{color: red;}
+header .meganav .dropdown button>a{line-height: 48px; display: inline-block; }
+header .dropdown-content .column6>hr{width:500px;}
+header .dropdown-content .column6>.textbox>.txt:nth-child(2)>.title1{height:50px;}
+header .dropdown-content .column7{margin-right: 40px;}
+header .dropdown-content .column{margin-right: 50px;}
+header .dropdown-content .column>hr{width:200px;}
+header .column5>hr{width:400px}
+header .column4>hr{width:520px}
+header .dropdown:nth-child(2) .txt:last-child>li:first-child{height: 50px;}
+header .dropdown-content .column2{margin-right: 50px;}
+header .meganav .dropdown:hover button>a{border-bottom: 2px solid red;}
+header .meganav .dropdown:last-child button>a{border-bottom: none}
+header .dropdown-content .column3>li~li:hover a{color:red;}
+header .dropdown-content .column2>li~li:hover a{color:red;}
+header .dropdown-content .column7>li~li:hover a{color:red;}
+header .dropdown-content .column6>.textbox>.txt>li~li:hover a{color:red;}
+header .dropdown-content .column4>.textbox>.txt>li~li:hover a{color:red;}
+header .dropdown-content .column5>.textbox>.txt>li~li:hover a{color:red;}
+header .dropdown-content .column>li~li:hover a{color:red;}
+header .dropdown-content .column1>li:hover a{color:red;}
+header .meganav>li:nth-child(5):hover button{color:yellow}
+
+/*.search*/
+header .search .btn{
+  height: 50px;
+  font-size: 30px; 
+  color: #fff;
+  cursor: pointer;
+}
+header .dropdown-content2{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-10px);
+  display: none;
+  transition: all 0.5s;
+  z-index: 99;
+}
+header .search .column>li{
+  position: relative;
+  margin-top: 40px;
+}
+header .search .column>li>input{
+  width:600px;
+  height:60px;
+  border: 4px solid black;
+  line-height: 52px;
+  font-size: 30px;
+  font-family: '휴먼둥근헤드라인';
+  text-indent: 15px;
+  outline: none;
+}
+.search .column{width:600px;}
+header .search .column i{
+  position: absolute;
+  right: 10px; top:10px;
+  font-size: 40px;
+  color:#333;
+  cursor: pointer;
+}
+header .search .column2{
+  display: flex;
+}
+header .search .column2>li{
+  width:300px;
+}
+header .search .column2>li:first-child{
+  margin-left: 15px;
+}
+header .search .column2>li:last-child{
+  margin-left: 80px;
+  font-family: '나눔스퀘어';
+  line-height: 35px;
+  color:black;
+}
+header .search .column2>li:last-child>p>a>b{color:#ed7878}
+header .search .column2>li>h1{
+  font-size: 30px;
+  font-family: '휴먼둥근헤드라인';
+  line-height: 80px;
+  color: black;
+}
+header .search .column2>li>p{
+  font-size: 20px;
+  color: #999;
+}
+header .gb{
+  width:100%;
+  min-width: 1200px;
+  height:600px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 98;
+  display: none;
+}
+header .gb2{
+  width:100%;
+  min-width: 1200px;
+  height:600px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 98;
+  display: none;
+}

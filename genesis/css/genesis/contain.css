@@ -1,0 +1,147 @@
+#contain{width: 100%;}
+#contain .wrap{
+  background-color: #111;
+  position: relative;
+}
+#contain .wrapper{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#contain .box{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+#contain .box.on{
+  display: none;
+}
+#contain .box>ul{
+  width: 50%;
+  height: 100%;
+}
+#contain .box>ul>li{
+  float: left;
+  width: 33.3%;
+  height: 33.3%;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+#contain .box>ul>.gray{
+  background-color: #999;
+}
+#contain .box>ul>.thumb{
+  width: 66.6%;
+  height: 33.3%;
+  background-position: center;
+  background-size: cover;
+}
+#contain .box>ul>.one{
+  background-image: url(../../img/genesis/thumb1.png);
+}
+#contain .box>ul>.two{
+  background-image: url(../../img/genesis/thumb2.png);
+}
+#contain .box>ul>li img{
+  width: 100%;
+}
+#contain .box>ul>.largeImg{
+  width: 66.66%;
+  height: 66.66%;
+  background-color: #111;
+  background-position: top;
+  background-size: cover;
+  padding-top: 48%;
+  color: #999;
+  font-weight: bold;
+}
+#contain .box>ul>.A{
+  background-image: url(../../img/genesis/A.png);
+  height: 66.6%;
+}
+#contain .box>ul>.D{
+  background-image: url(../../img/genesis/D.png);
+}
+#contain .box>ul>.I{
+  background-image: url(../../img/genesis/I.png);
+}
+#contain .box>ul>.P{
+  background-image: url(../../img/genesis/P.png);
+  width: 66.66%;
+}
+#contain .box>ul>.S{
+  background-image: url(../../img/genesis/S.png);
+}
+#contain .box>ul>.R{
+  background-image: url(../../img/genesis/R.png);
+}
+#contain .box>ul>.T{
+  background-image: url(../../img/genesis/T.png);
+}
+#contain .box>ul>.largeImg>span{
+  font-size: 50px;
+  line-height: 60px;
+  font-family: 'Adobe 고딕 Std';
+}
+#contain .box>ul>.largeImg>p{
+  font-size: 30px;
+  line-height: 35px;
+}
+#contain .box>ul>.txt{
+  width: 33.3%;
+  height: 66.6%;
+}
+#contain #C>ul{
+  width: 33.333%;
+}
+#contain #C,
+#contain #B{
+  opacity: 0;
+}
+#contain #C>ul>li{
+  width: 50%;
+}
+#contain #C .largeImg{
+  width: 100%;
+  padding-top: 70%;
+}
+#contain #C>ul>.three{
+  width: 100%;
+  background-image: url(../../img/genesis/thumb3.png);
+}
+/*트리거*/
+#contain .trigger{
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+}
+#contain #trigger7{
+  top: 10px;
+}
+#contain #trigger8{
+  top: 1000px;
+}
+#contain #trigger9{
+  top: 1500px;
+}
+#contain #trigger10{
+  top: 3000px;
+}
+#contain #trigger11{
+  top: 3500px;
+}
+#contain #trigger12{
+  top: 4000px;
+}
+#contain #trigger13{
+  top: 5500px;
+}
+#contain #B>ul>li,
+#contain #C>ul>li{
+  transform: rotateY(180deg);
+}

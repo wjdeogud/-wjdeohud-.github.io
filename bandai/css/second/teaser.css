@@ -1,0 +1,53 @@
+#teaser{min-width: 1920px;}
+#teaser>.wrapper{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
+}
+#teaser>.wrapper h1{
+  line-height: 120px;
+  font-size: 100px;
+  position: absolute;
+  top: 300px; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'HY견명조';
+  font-weight: normal;
+  z-index: 999;
+  transition: all 0.5s;
+}
+#teaser>.wrapper>.box{
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#teaser>.wrapper>.box>img{
+  opacity: 0.6;
+}
+#teaser>.wrapper>.txt{
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 2;
+  transition: all 0.5s;
+}
+#teaser .video{
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#teaser .video>#video{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}

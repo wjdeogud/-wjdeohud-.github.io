@@ -1,0 +1,26 @@
+#gnb>.wrap{
+  height: 1000px;
+  padding-bottom: 200px;
+  color: #111;
+}
+#gnb>.wrap>h1{
+  font-size: 50px;
+  line-height: 200px;
+}
+#gnb>.wrap>h1>span{color: #3d7bf7;}
+#gnb>.wrap>ul{
+  width: 1140px;
+  display: flex;
+  padding: 0 30px;
+}
+#gnb>.wrap>ul>li{
+  width: 16.666%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+#gnb>.wrap>ul>li img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

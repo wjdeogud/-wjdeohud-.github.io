@@ -1,0 +1,51 @@
+#main{
+  min-width: 1200px;
+  background:repeating-linear-gradient(90deg,#83aab6,#a6c282);
+  padding-top: 160px;
+}
+#main>div:first-child{
+  width:100%;
+  height:520px;
+  background: url(../img/main.png) center/cover;
+}
+#main>.wrap{
+  position: relative;
+  padding:80px 0 80px 90px;
+}
+#main>.wrap .largeImg{
+  width:900px;
+  height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+#main>.wrap .largeImg>.thumbs{
+  width: 5400px;
+  height: 480px;
+  position: absolute;
+  top: 0; left: 0;
+}
+#main>.wrap .largeImg>.thumbs>li{
+  width: 900px;
+  float: left;
+}
+#main>.wrap>.sub{
+  position: absolute;
+  right: 90px; top: 80px;
+}
+#main .sub>li{
+  width: 260px;
+  height: 80px;
+  background-color: #fff;
+  color: #666;
+  position: relative;
+}
+#main .sub>li>p{
+  width: 200px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+#main .sub>li.on{
+  color:#000;
+  border: 4px solid black;
+}

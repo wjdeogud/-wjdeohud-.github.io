@@ -1,0 +1,101 @@
+#contents>.wrap{
+  width: 100vw;
+  position: relative;
+  background-color: #111;
+}
+#contents .box{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#contents .box .txt{
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+#contents .box .txt .largeImg{
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+}
+#contents .box .txt .largeImg img{
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+}
+#contents .box .text{
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0 0 80px;
+  background-color: #111;
+  color: #fff;
+  position: absolute;
+}
+#contents .box .text>span{
+  line-height: 100px;
+  font-size: 80px;
+  font-family: 'HY견명조';
+}
+#contents .box .text>p{
+  font-size: 20px;
+  line-height: 30px;
+  margin: 50px 0;
+  width: 90%;
+}
+#contents .box .text>button{
+  width: 200px;
+  height: 50px;
+  border: 2px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#contents .box .text>button:hover{background-color: #fff; color: #111;}
+#contents .box .text img{width: 95%;}
+
+#contents .trigger{
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  z-index: -9999;
+}
+#contents #trigger1{
+  top: 10px;
+}
+#contents #trigger2{
+  top: 500px;
+}
+#contents #trigger3{
+  top: 1000px;
+}
+#contents #trigger4{
+  top: 1500px;
+}
+#contents #trigger5{
+  top: 2000px;
+}
+#contents #trigger6{
+  top: 3000px;
+}
+#contents .box .txt>div.on{
+  display: none;
+}
+#contents #second{
+  width: 0;
+}
+#contents #third{
+  height: 0;
+}
+#contents #two,
+#contents #three{
+  opacity: 0;
+}

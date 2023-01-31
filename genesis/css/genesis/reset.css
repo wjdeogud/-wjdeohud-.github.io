@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+.clearfix::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+body{
+  -ms-overflow-style: none;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 5%; /* 스크롤바의 길이 */
+    background: #333; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #999;  /*스크롤바 뒷 배경 색상*/
+}
